@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' style=' background:black'><text y='16' font-family='Trebuchet MS' font-weight='900' fill='orange'>UB</text></svg>">
+
+  <!--<link rel="stylesheet" href="reset.css">-->
+  <!--<link rel="stylesheet" href="base.css">-->
+  <link rel="stylesheet" href="style.css">
+  <!--<script type="module" src="app.js"></script>-->
+  <script src="script.js" defer></script>
+
+  <title>Contacts</title>
+</head>
+
+<body id="body">
+  <table id="table">
+    <thead>
+      <tr>
+        <th>index</th>
+        <th>name</th>
+        <th>phone</th>
+        <th>email</th>
+        <th>actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td>1234567890</td>
+        <td>john.doe@example.com</td>
+        <td>
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jane Doe</td>
+        <td>0987654321</td>
+        <td>jane.doe@example.com</td>
+        <td>
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <form id="add-form" action="">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="phone" placeholder="Phone" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <button type="submit">Add</button>
+  </form>
+
+  <form id="edit-form" action="" hidden>
+    <input type="hidden" name="index">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="phone" placeholder="Phone" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <button type="submit">Save</button>
+    <button type="button" class="cancel">Cancel</button>
+  </form>
+</body>
+
+</html>
